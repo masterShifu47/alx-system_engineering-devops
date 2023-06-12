@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(cat /etc/passwd | cut -F: '{print $1, $6}' | sort -k1)
